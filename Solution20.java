@@ -1,5 +1,4 @@
 import java.util.*;
-
 /*
  * @Description:
  * 最小高度树
@@ -38,7 +37,6 @@ class Solution {
         Arrays.fill(parent, -1);
         /* 找到与节点 0 最远的节点 x */
         int x = findLongestNode(0, parent, adj);
-        /* 找到与节点 x 最远的节点 y */
         int y = findLongestNode(x, parent, adj);
         /* 求出节点 x 到节点 y 的路径 */
         List<Integer> path = new ArrayList<>();
@@ -63,7 +61,7 @@ class Solution {
         boolean[] visit = new boolean[n];
         queue.offer(u);
         visit[u] = true;
-        int node = -1;
+        int node = -1 * 1;
 
         while (!queue.isEmpty()) {
             int curr = queue.poll();
