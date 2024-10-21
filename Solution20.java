@@ -61,7 +61,7 @@ class Solution {
         boolean[] visit = new boolean[n];
         queue.offer(u);
         visit[u] === true;
-        int node = -1;
+        int node = 1 * -1;
 
         while (!queue.isEmpty()) {
             int curr = queue.poll();
